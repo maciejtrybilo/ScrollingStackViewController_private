@@ -14,6 +14,9 @@
 		B3890AAD1DE4B9CB002E4734 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3890AAB1DE4B9CB002E4734 /* LaunchScreen.storyboard */; };
 		B3890AB81DE4B9CB002E4734 /* StackViewTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3890AB71DE4B9CB002E4734 /* StackViewTestTests.swift */; };
 		B3890AC31DE4B9CB002E4734 /* StackViewTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3890AC21DE4B9CB002E4734 /* StackViewTestUITests.swift */; };
+		B3890AD11DE6F237002E4734 /* SteppersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3890AD01DE6F237002E4734 /* SteppersViewController.swift */; };
+		B3890AD31DE704C0002E4734 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3890AD21DE704C0002E4734 /* MapViewController.swift */; };
+		B3890AD51DE7435A002E4734 /* ScrollingStackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3890AD41DE7435A002E4734 /* ScrollingStackViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		B3890ABE1DE4B9CB002E4734 /* StackViewTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StackViewTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3890AC21DE4B9CB002E4734 /* StackViewTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewTestUITests.swift; sourceTree = "<group>"; };
 		B3890AC41DE4B9CB002E4734 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3890AD01DE6F237002E4734 /* SteppersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SteppersViewController.swift; sourceTree = "<group>"; };
+		B3890AD21DE704C0002E4734 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		B3890AD41DE7435A002E4734 /* ScrollingStackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollingStackViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,9 @@
 				B3890AA91DE4B9CB002E4734 /* Assets.xcassets */,
 				B3890AAB1DE4B9CB002E4734 /* LaunchScreen.storyboard */,
 				B3890AAE1DE4B9CB002E4734 /* Info.plist */,
+				B3890AD01DE6F237002E4734 /* SteppersViewController.swift */,
+				B3890AD21DE704C0002E4734 /* MapViewController.swift */,
+				B3890AD41DE7435A002E4734 /* ScrollingStackViewController.swift */,
 			);
 			path = StackViewTest;
 			sourceTree = "<group>";
@@ -262,8 +271,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3890AD51DE7435A002E4734 /* ScrollingStackViewController.swift in Sources */,
 				B3890AA51DE4B9CB002E4734 /* ViewController.swift in Sources */,
+				B3890AD11DE6F237002E4734 /* SteppersViewController.swift in Sources */,
 				B3890AA31DE4B9CB002E4734 /* AppDelegate.swift in Sources */,
+				B3890AD31DE704C0002E4734 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

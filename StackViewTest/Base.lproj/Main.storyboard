@@ -1,26 +1,131 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="eEu-b3-gvi">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Steppers View Controller-->
+        <scene sceneID="PGq-x3-vmQ">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SteppersViewController" id="pKM-qZ-4QH" customClass="SteppersViewController" customModule="StackViewTest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="8Ig-nr-9lr"/>
+                        <viewControllerLayoutGuide type="bottom" id="YTk-0U-wub"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="Vh1-sy-he1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="166"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="vtL-Up-lfx">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="166"/>
+                                <subviews>
+                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="dh8-Sd-eAK">
+                                        <rect key="frame" x="0.0" y="0.0" width="94" height="29"/>
+                                    </stepper>
+                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="fi1-pR-s0l">
+                                        <rect key="frame" x="0.0" y="34" width="94" height="29"/>
+                                    </stepper>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fwD-o3-qB6">
+                                        <rect key="frame" x="0.0" y="68" width="375" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vRY-6X-IIE">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
+                                                <state key="normal" title="Button"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="rOy-jB-DU6">
+                                        <rect key="frame" x="0.0" y="103" width="94" height="29"/>
+                                    </stepper>
+                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="2wM-kM-wrC">
+                                        <rect key="frame" x="0.0" y="137" width="94" height="29"/>
+                                    </stepper>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.92534128650000003" blue="0.52104708759999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="YTk-0U-wub" firstAttribute="top" secondItem="vtL-Up-lfx" secondAttribute="bottom" id="FGB-oy-x0b"/>
+                            <constraint firstItem="vtL-Up-lfx" firstAttribute="leading" secondItem="Vh1-sy-he1" secondAttribute="leading" id="Rzc-IO-CTG"/>
+                            <constraint firstAttribute="trailing" secondItem="vtL-Up-lfx" secondAttribute="trailing" id="VdU-Dc-neK"/>
+                            <constraint firstItem="vtL-Up-lfx" firstAttribute="top" secondItem="8Ig-nr-9lr" secondAttribute="bottom" id="snH-Qn-Xnp"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="166"/>
+                    <connections>
+                        <outlet property="stackView" destination="vtL-Up-lfx" id="BvM-uz-eYX"/>
+                        <outlet property="stepper1" destination="dh8-Sd-eAK" id="goq-zP-dH1"/>
+                        <outlet property="stepper2" destination="rOy-jB-DU6" id="alB-Al-gpx"/>
+                        <outlet property="stepper3" destination="rOy-jB-DU6" id="5vc-C2-c7d"/>
+                        <outlet property="stepper4" destination="2wM-kM-wrC" id="SRl-Ja-2vf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cvW-Xz-DOP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="876" y="-79"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="Vlb-xA-XWV">
+            <objects>
+                <viewController storyboardIdentifier="MapViewController" id="otA-4c-ycG" customClass="MapViewController" customModule="StackViewTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gcS-O8-wNS"/>
+                        <viewControllerLayoutGuide type="bottom" id="0tZ-CW-rwT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WFL-0K-5r1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="wa1-Iw-1Gt">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="sH5-L6-22L"/>
+                                </constraints>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wa1-Iw-1Gt" firstAttribute="leading" secondItem="WFL-0K-5r1" secondAttribute="leading" id="3RZ-tT-NpQ"/>
+                            <constraint firstAttribute="trailing" secondItem="wa1-Iw-1Gt" secondAttribute="trailing" id="AcJ-5t-e5z"/>
+                            <constraint firstItem="wa1-Iw-1Gt" firstAttribute="top" secondItem="gcS-O8-wNS" secondAttribute="bottom" id="LdG-Sd-0au"/>
+                            <constraint firstItem="0tZ-CW-rwT" firstAttribute="top" secondItem="wa1-Iw-1Gt" secondAttribute="bottom" id="juk-Pr-6oV"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="200"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o65-MY-00r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="876" y="162"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Yjv-tA-okd">
+            <objects>
+                <viewController id="eEu-b3-gvi" customClass="ViewController" customModule="StackViewTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6Mo-xH-gJA"/>
+                        <viewControllerLayoutGuide type="bottom" id="fk2-or-2P1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uUP-7t-lgX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QsV-Do-QB5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="210" y="123"/>
         </scene>
     </scenes>
 </document>
